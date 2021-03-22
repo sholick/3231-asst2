@@ -88,7 +88,6 @@ int new_file_open(char *path, int flags, mode_t mode, struct OF_entry **entry) {
 int *new_OF_entry(int flags, mode_t mode, int index){
 
 	// create new entry based on vfs_open params
-	struct vnode *vn = kmalloc(sizeof(struct vnode));
 	struct OF_entry *new_entry;
 	char con_path[5] = 'con:\0';
 
